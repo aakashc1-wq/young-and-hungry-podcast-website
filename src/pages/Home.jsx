@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import seanPhoto from "../assets/sean-young-photo.jpg";
+import seanPhoto from "../assets/sean-young-photo.png";
 
 function InstagramIcon(props) {
   return (
