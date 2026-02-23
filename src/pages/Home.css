@@ -16,14 +16,14 @@
   color: white;
   text-align: center;
   padding: 20px;
+  transition: background 0.8s ease;
 }
 
 .hero-overlay {
   width: min(900px, 92vw);
-  background: rgba(0, 0, 0, 0.52);
+  background: rgba(0, 0, 0, 0.25);
   padding: 36px;
   border-radius: 18px;
-  backdrop-filter: blur(6px);
 }
 
 .eyebrow {
@@ -34,9 +34,51 @@
   margin: 0 0 10px;
 }
 
+/* SECTION VISUALS */
+.section-visual {
+  border-radius: 16px;
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.visual-about {
+  background: linear-gradient(135deg, #1a5c35 0%, #2d8a55 50%, #0d3320 100%);
+}
+
+.visual-research {
+  background: linear-gradient(135deg, #0d3320 0%, #3a7a52 50%, #1a5c35 100%);
+}
+
+.visual-resources {
+  background: linear-gradient(135deg, #2d6e4a 0%, #1a3d26 50%, #4a9e6a 100%);
+}
+
+.visual-label {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
 .hero h1 {
   margin: 0 0 10px;
   font-size: clamp(2rem, 4vw, 3.2rem);
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    white-space: normal;
+  }
 }
 
 .sub {

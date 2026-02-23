@@ -35,17 +35,17 @@ const socialLinks = [
 
 const slides = [
   {
-    img: "https://picsum.photos/1600/900?random=11",
+    gradient: "linear-gradient(135deg, #0a2e1a 0%, #1a5c35 50%, #0d1f12 100%)",
     title: "AI for Parents & Teachers",
     subtitle: "Practical guidance for using AI responsibly to support K-12 learning without the overwhelm.",
   },
   {
-    img: "https://picsum.photos/1600/900?random=12",
+    gradient: "linear-gradient(135deg, #0d1f12 0%, #2d6e4a 50%, #1a3d26 100%)",
     title: "Short Episodes. Big Takeaways.",
     subtitle: "A podcast built for busy adults: what AI is, how it works, and how to teach kids to use it well.",
   },
   {
-    img: "https://picsum.photos/1600/900?random=13",
+    gradient: "linear-gradient(135deg, #1a3d26 0%, #0a2e1a 40%, #3a7a52 100%)",
     title: "Turn Learning Into Action",
     subtitle: "Worksheets, activities, and interactive tools connected to each episode, ready for home or classroom.",
   },
@@ -69,7 +69,7 @@ export default function Home() {
       {/* HERO */}
       <section
         className="hero"
-        style={{ backgroundImage: `url(${active.img})` }}
+        style={{ background: active.gradient }}
         aria-label="Podcast hero slideshow"
       >
         <div className="hero-overlay">
@@ -195,10 +195,9 @@ export default function Home() {
 
       {/* ABOUT */}
       <section className="split">
-        <img
-          src="https://picsum.photos/800/600?random=21"
-          alt="A parent and teacher collaborating"
-        />
+        <div className="section-visual visual-about" aria-hidden="true">
+          <span className="visual-label">About</span>
+        </div>
         <div className="text">
           <h2>About</h2>
           <p>
@@ -238,18 +237,16 @@ export default function Home() {
             Read our research and rationale
           </Link>
         </div>
-        <img
-          src="https://picsum.photos/800/600?random=22"
-          alt="A classroom learning environment"
-        />
+        <div className="section-visual visual-research" aria-hidden="true">
+          <span className="visual-label">Research</span>
+        </div>
       </section>
 
       {/* RESOURCES */}
       <section className="split">
-        <img
-          src="https://picsum.photos/800/600?random=23"
-          alt="Worksheets and learning tools"
-        />
+        <div className="section-visual visual-resources" aria-hidden="true">
+          <span className="visual-label">Resources</span>
+        </div>
         <div className="text">
           <h2>Resources</h2>
           <p>
