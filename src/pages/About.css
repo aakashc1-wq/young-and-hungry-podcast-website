@@ -129,44 +129,73 @@
 }
 
 .creator-card {
-  border: 1px solid #e6e6e6;
+  border: 1.5px solid var(--border);
   border-radius: 16px;
-  padding: 20px;
-  background: #fafafa;
+  padding: 24px 20px;
+  background: white;
   text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.creator-card:hover {
+  border-color: var(--navy);
+  box-shadow: 0 4px 16px rgba(26,39,68,0.08);
 }
 
 .creator-card h3 {
-  margin: 10px 0 4px;
-  font-size: 1.15rem;
+  margin: 12px 0 4px;
+  font-size: 1.1rem;
+  color: var(--navy);
 }
 
 .role {
   margin: 0 0 10px;
-  font-weight: 800;
-  color: #333;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .creator-card p {
   margin: 0 auto;
   max-width: 40ch;
   line-height: 1.7;
+  color: #555;
+  font-size: 0.9rem;
 }
 
 .avatar {
-  width: 60px;
-  height: 60px;
+  width: 72px;
+  height: 72px;
   border-radius: 999px;
-  background: #111;
+  background: var(--navy);
   margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.avatar-photo {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.avatar-initials {
+  background: var(--navy);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
 }
 
 .avatar.alt {
-  background: #444;
+  background: var(--navy-light);
 }
 
 .avatar.alt2 {
-  background: #666;
+  background: #4a5a8a;
 }
 
 /* LINK CARDS */

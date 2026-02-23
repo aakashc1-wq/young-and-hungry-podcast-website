@@ -291,7 +291,7 @@ export default function Home() {
           teachers, and community partners.
         </p>
         <div className="contact-preview-actions">
-          <Link to="/contact" className="cta-button small">
+          <Link to="/contact" className="cta-button small dark">
             Contact us
           </Link>
           <a
