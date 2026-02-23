@@ -169,18 +169,20 @@
   width: 72px;
   height: 72px;
   border-radius: 999px;
-  background: var(--navy);
+  background: #1a2744;
   margin: 0 auto;
   flex-shrink: 0;
+  display: block;
 }
 
 .avatar-photo {
   object-fit: cover;
   object-position: center top;
+  display: block;
 }
 
 .avatar-initials {
-  background: var(--navy);
+  background: #1a2744;
   color: white;
   display: flex;
   align-items: center;
@@ -191,7 +193,7 @@
 }
 
 .avatar.alt {
-  background: var(--navy-light);
+  background: #2d3f6b;
 }
 
 .avatar.alt2 {

@@ -56,8 +56,9 @@
 .email {
   font-weight: 800;
   text-decoration: none;
-  color: #111;
-  word-break: break-word;
+  color: #1a2744;
+  word-break: break-all;
+  font-size: 0.9rem;
 }
 
 .email:hover {
@@ -69,14 +70,15 @@
   margin-top: 6px;
   padding: 10px 16px;
   border-radius: 12px;
-  background: #111;
+  background: #1a2744;
   color: white;
   text-decoration: none;
   font-weight: 800;
+  transition: background 0.2s;
 }
 
 .email-button:hover {
-  opacity: 0.9;
+  background: #2d3f6b;
 }
 
 /* FOOTER */
@@ -88,16 +90,18 @@
 .linktree-btn {
   display: inline-block;
   margin-top: 12px;
-  padding: 12px 18px;
+  padding: 12px 24px;
   border-radius: 999px;
-  border: 1px solid #ddd;
+  border: 2px solid #1a2744;
   text-decoration: none;
-  font-weight: 800;
-  color: #111;
+  font-weight: 700;
+  color: #1a2744;
+  transition: all 0.2s;
 }
 
 .linktree-btn:hover {
-  background: #f3f3f3;
+  background: #1a2744;
+  color: white;
 }
 
 /* MOBILE */
