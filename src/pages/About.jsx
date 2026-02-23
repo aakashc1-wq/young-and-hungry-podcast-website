@@ -1,5 +1,6 @@
 import "./About.css";
 import logo from "../assets/young-and-hungry-logo.jpg";
+import seanPhoto from "../assets/sean-young-photo.png";
 
 const links = [
   {
@@ -88,7 +89,7 @@ export default function About() {
 
         <div className="creators">
           <article className="creator-card">
-            <div className="avatar" />
+            <img src={seanPhoto} alt="Dr. Sean Young" className="avatar avatar-photo" style={{width:72,height:72,borderRadius:'999px',objectFit:'cover',objectPosition:'center top',display:'block',margin:'0 auto'}} />
             <div>
               <h3>Dr. Sean Young</h3>
               <p className="role">Host • Research + Guidance</p>
@@ -100,7 +101,7 @@ export default function About() {
           </article>
 
           <article className="creator-card">
-            <div className="avatar alt" />
+            <div className="avatar avatar-initials" style={{width:72,height:72,borderRadius:'999px',background:'#1a2744',color:'white',display:'flex',alignItems:'center',justifyContent:'center',fontWeight:800,fontSize:'1.1rem',margin:'0 auto'}}>M</div>
             <div>
               <h3>Melody</h3>
               <p className="role">Co-host • Student Perspective</p>
@@ -112,7 +113,7 @@ export default function About() {
           </article>
 
           <article className="creator-card">
-            <div className="avatar alt2" />
+            <div className="avatar avatar-initials" style={{width:72,height:72,borderRadius:'999px',background:'#2d3f6b',color:'white',display:'flex',alignItems:'center',justifyContent:'center',fontWeight:800,fontSize:'1.1rem',margin:'0 auto'}}>MV</div>
             <div>
               <h3>Maverick</h3>
               <p className="role">Co-host • Creativity</p>
