@@ -35,17 +35,14 @@ const socialLinks = [
 
 const slides = [
   {
-    gradient: "linear-gradient(135deg, #0a2e1a 0%, #1a5c35 50%, #0d1f12 100%)",
     title: "AI for Parents & Teachers",
     subtitle: "Practical guidance for using AI responsibly to support K-12 learning without the overwhelm.",
   },
   {
-    gradient: "linear-gradient(135deg, #0d1f12 0%, #2d6e4a 50%, #1a3d26 100%)",
     title: "Short Episodes. Big Takeaways.",
     subtitle: "A podcast built for busy adults: what AI is, how it works, and how to teach kids to use it well.",
   },
   {
-    gradient: "linear-gradient(135deg, #1a3d26 0%, #0a2e1a 40%, #3a7a52 100%)",
     title: "Turn Learning Into Action",
     subtitle: "Worksheets, activities, and interactive tools connected to each episode, ready for home or classroom.",
   },
@@ -69,10 +66,9 @@ export default function Home() {
       {/* HERO */}
       <section
         className="hero"
-        style={{ background: active.gradient }}
         aria-label="Podcast hero slideshow"
       >
-        <div className="hero-overlay">
+        <div className="hero-inner">
           <p className="eyebrow">Young and Hungry K-12 Podcast</p>
           <h1>{active.title}</h1>
           <p className="sub">{active.subtitle}</p>
@@ -196,7 +192,7 @@ export default function Home() {
       {/* ABOUT */}
       <section className="split">
         <div className="section-visual visual-about" aria-hidden="true">
-          <span className="visual-label">About</span>
+          <span className="visual-icon">🎙️</span>
         </div>
         <div className="text">
           <h2>About</h2>
@@ -238,14 +234,14 @@ export default function Home() {
           </Link>
         </div>
         <div className="section-visual visual-research" aria-hidden="true">
-          <span className="visual-label">Research</span>
+          <span className="visual-icon">🔬</span>
         </div>
       </section>
 
       {/* RESOURCES */}
       <section className="split">
         <div className="section-visual visual-resources" aria-hidden="true">
-          <span className="visual-label">Resources</span>
+          <span className="visual-icon">📚</span>
         </div>
         <div className="text">
           <h2>Resources</h2>
