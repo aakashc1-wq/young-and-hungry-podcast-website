@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import seanPhoto from "../assets/sean-young-photo.png";
 
 function InstagramIcon(props) {
   return (
@@ -150,7 +151,7 @@ export default function Home() {
 
         <div className="hosts">
           <div className="host-card">
-            <div className="host-avatar host-primary" />
+            <img src={seanPhoto} alt="Dr. Sean Young" className="host-avatar host-photo" />
             <div className="host-info">
               <strong>Dr. Sean Young</strong>
               <span>Host and Research Lead</span>
