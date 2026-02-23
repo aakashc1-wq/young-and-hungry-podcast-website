@@ -297,6 +297,17 @@
 .host-secondary { background: #444; }
 .host-tertiary  { background: #777; }
 
+.host-initials {
+  background: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
 .host-photo {
   object-fit: cover;
   object-position: center top;

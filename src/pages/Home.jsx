@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import seanPhoto from "../assets/sean-young-photo.png";
+import seanPhoto from "../assets/sean-young-photo.jpg";
 
 function InstagramIcon(props) {
   return (
@@ -158,14 +158,14 @@ export default function Home() {
             </div>
           </div>
           <div className="host-card">
-            <div className="host-avatar host-secondary" />
+            <div className="host-avatar host-initials">M</div>
             <div className="host-info">
               <strong>Melody</strong>
               <span>Co-host, Student Perspective</span>
             </div>
           </div>
           <div className="host-card">
-            <div className="host-avatar host-tertiary" />
+            <div className="host-avatar host-initials">MV</div>
             <div className="host-info">
               <strong>Maverick</strong>
               <span>Co-host, Creativity and Fun</span>
